@@ -319,8 +319,7 @@ class ShowImage(QMainWindow):
         resize_img = cv2.resize(self.Image, None, fx=scale, fy=scale, interpolation=cv2.INTER_CUBIC)
         cv2.imshow("Original", self.Image)
         cv2.imshow("Resized", resize_img)
-        cv2.waitkey()
-        # cv2.destroyAllWindows()
+        cv2.waitKey()
 
 
     # Save Image
